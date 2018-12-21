@@ -1,0 +1,14 @@
+[
+  {
+    "name": "画飞线",
+    "is": "DrawLine"
+  },
+  {
+    "name": "画扩散圆",
+    "is": "DrawCircle"
+  },
+  {
+    "name": "画波浪",
+    "is": "DrawArea"
+  }
+]

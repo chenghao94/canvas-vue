@@ -1,0 +1,7 @@
+核心绘制方法
+     context.fill() 填充
+     context.stroke() 绘制边框
+
+绘制之前要设置好样式
+     context.fillStyle
+     context.strokeStyle
