@@ -32,7 +32,9 @@ export default {
       this.ctx.lineTo(0, 300)
       this.ctx.closePath()
       this.ctx.fill()
-      window.requestAnimationFrame(this.drawRect)
+      window.requestAnimationFrame(() => {
+        this.drawRect()
+      })
     }
   },
   mounted () {

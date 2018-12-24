@@ -9,7 +9,7 @@ export default class Circle {
     this.y = y
     this.radius = 0 // 最大半径
     this.r = 0 // 扩散半径
-    this.color = `rgba(${Math.round(255 * Math.random())},${Math.round(255 * Math.random())},${Math.round(255 * Math.random())},${(Math.random())})`
+    this.color = `rgba(${Math.round(255 * Math.random())},${Math.round(255 * Math.random())},${Math.round(255 * Math.random())},1)`
   }
   
   setRadius (width, height) {
@@ -21,8 +21,6 @@ export default class Circle {
   }
   
   draw (ctx) {
-    console.log('ctx', ctx)
-    console.log('this', this)
     this.clearCircle(ctx)
     ctx.beginPath()
     ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2)
