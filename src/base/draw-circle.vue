@@ -22,10 +22,7 @@ export default {
       this.ctx.beginPath()
       this.ctx.arc(150, 100, this.radius, 0, Math.PI * 2)
       this.ctx.closePath()
-      this.ctx.lineWidth = 2 // 线条宽度
       this.ctx.fillStyle = 'rgba(250,250,50,1)'
-      this.ctx.strokeStyle = 'rgba(250,250,50,1)' // 颜色
-      this.ctx.stroke()
       this.ctx.fill()
       this.radius += 0.5 // 每一帧半径增加0.5
       // 半径radius大于30时，重置为0

@@ -35,9 +35,11 @@ export default {
 .home {
   display: flex;
   padding-top: 50px;
+  height: 100%;
+  width: 100%;
 
   .nav-ul {
-    flex: 0 0 300px;
+    flex: 0 0 100px;
   }
 
   .view {
@@ -46,7 +48,6 @@ export default {
 }
 
 .nav-ul {
-  width: 200px;
   margin-left: 50px;
   span{
     font-size: 20px;
