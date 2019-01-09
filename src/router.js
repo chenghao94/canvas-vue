@@ -9,5 +9,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: () => import('./views/Home.vue')
-    }]
+    },
+    {
+      path: '/three/1',
+      name: 'home',
+      component: () => import('./threeJs/1/index.vue')
+    },
+    {
+      path: '/three/2',
+      name: 'home',
+      component: () => import('./threeJs/2/index.vue')
+    }
+  ]
 })
