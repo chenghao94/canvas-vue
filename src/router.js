@@ -8,7 +8,8 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: () => import('./views/Home.vue')
+      redirect: '/three/1',
+      component: () => import('./threeJs/1/index.vue')
     },
     {
       path: '/three/1',
