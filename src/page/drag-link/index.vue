@@ -9,7 +9,7 @@
 		    :out-points="com.outPoints"
 		    @beginLink="beginLink"
 		    @changePosition="changePosition"></drag-component>
-	    <svg width="1800" height="800">
+	    <svg width="100%" height="100%">
 		    <defs>
 			    <marker id="arrow"
 				    markerWidth="20"
@@ -18,7 +18,7 @@
 				    refY="10"
 				    orient="auto"
 				    markerUnits="strokeWidth">
-			        <path d="M10,5 L20,10 L10,15" fill="none" stroke="#fff" stroke-width="2" />
+			        <path d="M10,5 L20,10 L10,15" fill="none" stroke="#000000" stroke-width="2" />
 			    </marker>
 				</defs>
 	    </svg>
@@ -54,7 +54,7 @@ export default {
       console.log('开始移动', this.startPoint)
       document.onmousemove = (e) => {
         if (this.drawFlag) {
-          this.drawLink(this.startPoint.x, this.startPoint.y, e.pageX, e.pageY - 60, this.pathId)
+          this.drawLink(this.startPoint.x, this.startPoint.y, e.pageX, e.pageY, this.pathId)
         }
       }
     },
@@ -131,6 +131,6 @@ export default {
 <style lang="less" scoped>
 .drag-panel {
 	position: relative;
-	height: 800px;
+	height: 100%
 }
 </style>
