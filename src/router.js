@@ -7,19 +7,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      redirect: '/three/1',
-      component: () => import('./threeJs/1/index.vue')
-    },
-    {
-      path: '/three/1',
-      name: 'home',
-      component: () => import('./threeJs/1/index.vue')
-    },
-    {
-      path: '/three/2',
-      name: 'home',
-      component: () => import('./threeJs/2/index.vue')
+      name: '组件连线',
+      component: () => import('./page/drag-link/index.vue')
     }
   ]
 })

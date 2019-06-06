@@ -1,0 +1,66 @@
+[
+  {
+    "id": "component01",
+    "background": "#2b85e4",
+    "locate": {
+      "x": 100,
+      "y": 100
+    },
+    "inputPoints": [],
+    "outPoints": [
+      {
+        "id": "out01"
+      },
+      {
+        "id": "out02"
+      }
+    ]
+  },
+  {
+    "id": "component02",
+    "background": "aqua",
+    "locate": {
+      "x": 500,
+      "y": 300
+    },
+    "inputPoints": [
+      {
+        "id": "input01"
+      },
+      {
+        "id": "input02"
+      },
+      {
+        "id": "input03"
+      }
+    ],
+    "outPoints": [
+      {
+        "id": "out03"
+      },
+      {
+        "id": "out04"
+      }
+    ]
+  },
+  {
+    "id": "component03",
+    "background": "yellow",
+    "locate": {
+      "x": 900,
+      "y": 200
+    },
+    "inputPoints": [
+      {
+        "id": "input04"
+      },
+      {
+        "id": "input05"
+      },
+      {
+        "id": "input06"
+      }
+    ],
+    "outPoints": []
+  }
+]

@@ -4,10 +4,9 @@ import router from './router'
 import store from './store'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
-import './styles/index.less'
+import './style/index.less'
 
 Vue.use(iView)
-Vue.config.productionTip = false
 
 new Vue({
   router,
