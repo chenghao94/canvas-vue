@@ -14,6 +14,20 @@ export default new Router({
       path: '/test',
       name: '测试',
       component: () => import('./force-graph/test.vue')
+    },
+    {
+      path: '/path1',
+      name: '测试',
+      component: () => import('./page/svg-path/path1.vue')
+    },
+    {
+      path: '/path2',
+      name: '测试',
+      component: () => import('./page/svg-path/path2.vue')
+    },
+    {
+      path: '/layout',
+      name: '菜单',
     }
   ]
 })
