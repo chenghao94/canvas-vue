@@ -1,0 +1,108 @@
+[
+  {
+    "id": "component01",
+    "name": "组件1",
+    "inputs": [],
+    "outputs": [
+      {
+        "id": "out1"
+      },
+      {
+        "id": "out2"
+      }
+    ]
+  },
+  {
+    "id": "component02",
+    "name": "组件2",
+    "inputs": [
+      {
+        "id": "input1"
+      },
+      {
+        "id": "input2"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "id": "component03",
+    "name": "组件3",
+    "inputs": [
+      {
+        "id": "input1"
+      },
+      {
+        "id": "input2"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "out1"
+      },
+      {
+        "id": "out2"
+      }
+    ]
+  },
+  {
+    "id": "component04",
+    "name": "组件4",
+    "inputs": [
+      {
+        "id": "input1"
+      },
+      {
+        "id": "input2"
+      },
+      {
+        "id": "input3"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "out1"
+      }
+    ]
+  },
+  {
+    "id": "component05",
+    "name": "组件5",
+    "inputs": [
+      {
+        "id": "input1"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "out1"
+      }
+    ]
+  },
+  {
+    "id": "component06",
+    "name": "组件6",
+    "inputs": [
+      {
+        "id": "input1"
+      },
+      {
+        "id": "input2"
+      },
+      {
+        "id": "input3"
+      },
+      {
+        "id": "input4"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "out1"
+      },
+      {
+        "id": "out2"
+      }
+    ]
+  }
+]
