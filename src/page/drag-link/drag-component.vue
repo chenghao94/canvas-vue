@@ -1,23 +1,32 @@
 <template>
-    <div class="drag-component" :style="componentStyle" @mousedown="beginMove" @dragstart="dragstart">
-       <div v-for="(point,index) in outPoints"
-	       :id="point.id"
-	       :key="point.id"
-	       class="out-point"
-	       :style="{top:`${20+30*index}px`}"
-	       :x="`${100+locate.x+6}`"
-	       :y="`${20+30*index+6+locate.y}`"
-	       @mousedown="mousedown(point,index,$event)"
-	       @dragstart="dragstart"></div>
-       <div v-for="(point,index) in inputPoints"
-	       :id="point.id"
-	       :key="point.id"
-	       class="input-point"
-	       :x="`${locate.x-6}`"
-	       :y="`${20+30*index+6+locate.y}`"
-	       :style="{top:`${20+30*index}px`}"
-	       @dragstart="dragstart"></div>
-    </div>
+  <div
+    class="drag-component"
+    :style="componentStyle"
+    @mousedown="beginMove"
+    @dragstart="dragstart"
+  >
+    <div
+      v-for="(point, index) in outPoints"
+      :id="point.id"
+      :key="point.id"
+      class="out-point"
+      :style="{ top: `${20 + 30 * index}px` }"
+      :x="`${100 + locate.x + 6}`"
+      :y="`${20 + 30 * index + 6 + locate.y}`"
+      @mousedown="mousedown(point, index, $event)"
+      @dragstart="dragstart"
+    ></div>
+    <div
+      v-for="(point, index) in inputPoints"
+      :id="point.id"
+      :key="point.id"
+      class="input-point"
+      :x="`${locate.x - 6}`"
+      :y="`${20 + 30 * index + 6 + locate.y}`"
+      :style="{ top: `${20 + 30 * index}px` }"
+      @dragstart="dragstart"
+    ></div>
+  </div>
 </template>
 
 <script>
@@ -40,7 +49,7 @@ export default {
       this.moving = true
       let [currentX, currentY] = [em.clientX, em.clientY]
       let [x, y] = [this.locate.x, this.locate.y]
-      document.onmousemove = (e) => {
+      document.onmousemove = e => {
         if (this.moving) {
           this.locate.x = x + e.clientX - currentX
           this.locate.y = y + e.clientY - currentY
@@ -58,15 +67,16 @@ export default {
       let x = this.locate.x + 100 + 6
       let y = this.locate.y + 20 + 30 * index + 6
       this.$emit('beginLink', {
-        pointId: point.id, x, y
+        pointId: point.id,
+        x,
+        y
       })
     },
     dragstart (e) {
       e.preventDefault()
     }
   },
-  mounted () {
-  },
+  mounted () {},
   props: {
     id: {
       type: String,
@@ -106,37 +116,37 @@ export default {
 
 <style lang="less" scoped>
 .drag-component {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	cursor: pointer;
-	
-	.out-point {
-		position: absolute;
-		width: 10px;
-		height: 10px;
-		background: red;
-		right: -10px;
-		border: 2px solid transparent;
-		border-radius: 50%;
-		
-		&:hover {
-			border: 2px solid yellow;
-		}
-	}
-	
-	.input-point {
-		position: absolute;
-		width: 10px;
-		height: 10px;
-		background: rgba(243, 149, 181, 0.66);
-		left: -10px;
-		border: 2px solid transparent;
-		border-radius: 50%;
-		
-		&:hover {
-			border: 2px solid yellow;
-		}
-	}
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+
+  .out-point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    right: -10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+    &:hover {
+      border: 2px solid yellow;
+    }
+  }
+
+  .input-point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(243, 149, 181, 0.66);
+    left: -10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+    &:hover {
+      border: 2px solid yellow;
+    }
+  }
 }
 </style>

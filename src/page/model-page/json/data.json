@@ -1,0 +1,35 @@
+[
+  {
+    "id": "id001",
+    "name": "火车数据",
+    "type": "data",
+    "inputs": [],
+    "outputs": [
+      {
+        "id": "output01"
+      }
+    ]
+  },
+  {
+    "id": "id002",
+    "name": "上网数据",
+    "type": "data",
+    "inputs": [],
+    "outputs": [
+      {
+        "id": "output01"
+      }
+    ]
+  },
+  {
+    "id": "id003",
+    "name": "住宿数据",
+    "type": "data",
+    "inputs": [],
+    "outputs": [
+      {
+        "id": "output01"
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "id006",
+    "name": "筛选过滤",
+    "type": "component",
+    "inputs": [
+      {
+        "id": "input01"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "output01"
+      }
+    ]
+  },
+  {
+    "id": "id007",
+    "name": "并集",
+    "type": "component",
+    "inputs": [
+      {
+        "id": "input01"
+      },
+      {
+        "id": "input02"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "output01"
+      }
+    ]
+  },
+  {
+    "id": "id008",
+    "name": "数据校验",
+    "type": "component",
+    "inputs": [
+      {
+        "id": "input01"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "output01"
+      },
+      {
+        "id": "output02"
+      }
+    ]
+  }
+]

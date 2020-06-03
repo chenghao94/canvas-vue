@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "node001",
+      "entityId": "id001",
+      "type": "data",
+      "name": "火车数据",
+      "inputs": [],
+      "outputs": [
+        {
+          "id": "output01"
+        }
+      ],
+      "pos": {
+        "left": 30,
+        "top": 50
+      }
+    },
+    {
+      "id": "node002",
+      "entityId": "id006",
+      "type": "component",
+      "name": "筛选过滤",
+      "inputs": [
+        {
+          "id": "input01"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "output01"
+        }
+      ],
+      "pos": {
+        "left": 330,
+        "top": 150
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "path001",
+      "sourceId": "id001output01",
+      "targetId": "id006input01"
+    }
+  ]
+}

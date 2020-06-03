@@ -8,6 +8,11 @@ export default new Router({
     {
       path: '/',
       name: '组件连线',
+      component: () => import('./page/model-page/index.vue')
+    },
+    {
+      path: '/link',
+      name: '组件连线',
       component: () => import('./page/drag-link/index.vue')
     }
   ]
