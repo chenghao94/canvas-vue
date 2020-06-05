@@ -1,0 +1,132 @@
+{
+  "tables": [
+    {
+      "id": "table1",
+      "name": "数据表1"
+    },
+    {
+      "id": "table2",
+      "name": "数据表2"
+    },
+    {
+      "id": "table3",
+      "name": "数据表3"
+    },
+    {
+      "id": "table4",
+      "name": "数据表4"
+    },
+    {
+      "id": "table5",
+      "name": "数据表5"
+    },
+    {
+      "id": "table6",
+      "name": "数据表6"
+    }
+  ],
+  "models": [
+    {
+      "id": "model1",
+      "name": "模型1"
+    },
+    {
+      "id": "model2",
+      "name": "模型2"
+    },
+    {
+      "id": "model3",
+      "name": "模型3"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "output1",
+      "name": "输出表1"
+    },
+    {
+      "id": "output2",
+      "name": "输出表2"
+    },
+    {
+      "id": "output3",
+      "name": "输出表3"
+    },
+    {
+      "id": "output4",
+      "name": "输出表4"
+    }
+  ],
+  "pages": [
+    {
+      "id": "page1",
+      "name": "页面1"
+    },
+    {
+      "id": "page2",
+      "name": "页面2"
+    }
+  ],
+  "links": [
+    {
+      "source": "table1",
+      "target": "model1"
+    },
+    {
+      "source": "table2",
+      "target": "model1"
+    },
+    {
+      "source": "table3",
+      "target": "model2"
+    },
+    {
+      "source": "table4",
+      "target": "model2"
+    },
+    {
+      "source": "table4",
+      "target": "model3"
+    },
+    {
+      "source": "table5",
+      "target": "model3"
+    },
+    {
+      "source": "table6",
+      "target": "model3"
+    },
+    {
+      "source": "model1",
+      "target": "output1"
+    },
+    {
+      "source": "model1",
+      "target": "output2"
+    },
+    {
+      "source": "model2",
+      "target": "output3"
+    },
+    {
+      "source": "model3",
+      "target": "output4"
+    },
+    {
+      "source": "output1",
+      "target": "page1"
+    },
+    {
+      "source": "output2",
+      "target": "page1"
+    },
+    {
+      "source": "output3",
+      "target": "page2"
+    },
+    {
+      "source": "output4",
+      "target": "page2"
+    }
+  ]
+}
