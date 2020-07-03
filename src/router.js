@@ -11,6 +11,16 @@ export default new Router({
       component: () => import('./page/model-page/index.vue')
     },
     {
+      path: '/test1',
+      name: '组件连线',
+      component: () => import('./animation/test-arrow.vue')
+    },
+    {
+      path: '/test2',
+      name: '组件连线',
+      component: () => import('./animation/test-ball.vue')
+    },
+    {
       path: '/link',
       name: '组件连线',
       component: () => import('./page/drag-link/index.vue')
