@@ -7,6 +7,10 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/link'
+    },
+    {
+      path: '/home',
       name: '组件连线',
       component: () => import('./page/model-page/index.vue')
     },
