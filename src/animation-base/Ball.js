@@ -4,6 +4,8 @@ export default class Ball {
     this.radius = radius
     this.x = 0
     this.y = 0
+    this.scaleX = 1
+    this.scaleY = 1
     this.rotation = 0
     this.lineWidth = 1
   }
@@ -11,6 +13,7 @@ export default class Ball {
     context.save()
     context.translate(this.x, this.y)
     context.rotate(this.rotation)
+    context.scale(this.scaleX, this.scaleY)
     context.lineWidth = 2
     context.fillStyle = this.color
     context.beginPath()

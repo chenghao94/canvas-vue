@@ -17,12 +17,12 @@ export default new Router({
     {
       path: '/test1',
       name: '组件连线',
-      component: () => import('./animation/test-arrow.vue')
+      component: () => import('./animation-base/test-arrow.vue')
     },
     {
       path: '/test2',
       name: '组件连线',
-      component: () => import('./animation/test-ball.vue')
+      component: () => import('./animation-base/test-ball.vue')
     },
     {
       path: '/link',
